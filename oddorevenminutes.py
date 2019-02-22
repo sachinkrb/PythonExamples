@@ -8,6 +8,8 @@ from datetime import datetime
 import sys
 import os
 import html
+import random
+
 print(html.unescape("I &hearts; Python &lt;GuessingGame&gt;")) # Use of escape or unescape
 print(os.getcwd()) # Prints current working directory using os standard library and module
 print(sys.version)
@@ -45,8 +47,16 @@ while answer != 'exit':
         #continue statement can be used here to jump back to while loop to check the while statement
         
     elif answer == 'exit':
-        print('Bye Bye')
-        break       #this will break the execution for while loop
+        print('Guess a random int from 1 to 10. Try ur luck before you leave:')
+        answer1 = input()
+        if answer1 == str(random.randint(1,2)):
+            print('Looks like your lucky day')
+            
+        else:
+            
+            print('Please try next time')     
+            print('Bye Bye')
+                  #this will break the execution for while loop
         
     else:
         print('uh oh! Could not comprehend your input but the second hand was in ' + str(at_this_moment) + ' .Please try again')
@@ -63,6 +73,7 @@ import random
 dir(random)
 help(random)
 help(random.randit)
+
 """
 
 # Part of above code that is copied or sourced from a book pasted below
