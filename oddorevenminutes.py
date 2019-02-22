@@ -4,7 +4,6 @@
 # When 'continue' statements are used after ending of if, elif statements.....
 # ...Pointer will jump back to while loop immediately, hence total duration time can be shortened
 import ctypes  # An included library with Python install.
-abacddadada
 from datetime import datetime
 import sys
 import os
@@ -57,8 +56,14 @@ while answer != 'exit':
     print('') 
         
 """
-TIP OF THE DAY: If you need to import
 
+TIP OF THE DAY: If you need to import module and see what attributes the module contains:
+Example in python shell:
+import random
+dir(random)
+help(random)
+help(random.randit)
+"""
 
 # Part of above code that is copied or sourced from a book pasted below
 
