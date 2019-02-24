@@ -18,8 +18,9 @@ for num in range(2,10):
     for x in range(2, num):
         if num % x == 0:
             print(num, 'equals', x, '*', num//x)
-            break
+            break  #breaks the innermost for loop and jumps to outermost for loop
     else:
+            #Exits out of loop unable to get factored
             print(num, 'is a prime number')
             
 """
@@ -55,4 +56,3 @@ Results when else is indented for 'for' statement: Correct Result
 9 equals 3 * 3
 
 """
-
