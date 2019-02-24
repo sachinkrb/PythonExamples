@@ -13,7 +13,8 @@
 ##else clause runs when no exception occurs, and a loop’s else clause
 ##runs when no break occurs.
 ##Check the results
-
+##In summary break is used with to break out of for and while loop
+##else helps exhaust the list in for clause and execute the statement after else
 for num in range(2,10):
     for x in range(2, num):
         if num % x == 0:
@@ -22,8 +23,20 @@ for num in range(2,10):
     else:
             #Exits out of loop unable to get factored
             print(num, 'is a prime number')
-            
+
+
 """
+SHORT CODE:
+for num in range(2,10):
+    for x in range(2,num):
+        if num % x == 0:
+            print(str(num)+ 'not prime')
+            break 
+    else: #else will exhaust the list x above first before jumping down to next line
+            print(str(num) + 'prime')
+   """         
+"""
+In python shell >>>list(range(2,2) will result empty list []
 Results when else is indented for 'if' statement: Incorrect Result
 
 3 is a prime number
