@@ -23,7 +23,8 @@ def fibi2(n):
 
 fibi(100)
 print(fibi2(100)) # Only results are returned and stored on the list, use 'print' to print it
-
+#Calling fibi2(100) only won't print anything but executes function only
+#because results are collected in result list
 
 
 
