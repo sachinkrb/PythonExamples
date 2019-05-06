@@ -7,8 +7,8 @@ emp_2 = Employee()
 print(emp_1)
 print(emp_2)
 
-emp_1.first = 'romeo'       #romeo, julius, 50000 instance variables
-emp_1.last = 'julius'           # first, last, pay are attributes of the object
+emp_1.first = 'romeo'       #romeo, julius, 50000 instance variables not class variables
+emp_1.last = 'julius'           # first, last, pay are attributes of the object or instance but not the class
 emp_1.pay =  50000
 
 emp_2.first = 'juliet'
